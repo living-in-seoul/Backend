@@ -23,12 +23,10 @@ jobs:
 
     # 새로 추가된 부분
     - name: Grant execute permission to gradlew
-      run: chmod +x ./backend/blob/aec455ec4b37b72d9bb354db3f2fcca1c7d8f2e9/gradlew
+      run: chmod +x ./gradlew
     # 여기까지
 
     - name: Build with Gradle
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
       with:
         arguments: build
-
-# https://github.com/living-in-seoul/backend/blob/aec455ec4b37b72d9bb354db3f2fcca1c7d8f2e9/gradlew
